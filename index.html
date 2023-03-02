@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welkin</title>
+    <link rel="stylesheet" href="styles//general.css">
+    <link rel="stylesheet" href="styles//header.css">
+    <link rel="stylesheet" href="styles//home.css">
+    <link rel="stylesheet" href="styles//aboutMe.css">
+    <link rel="stylesheet" href="styles//skills.css">
+    <link rel="stylesheet" href="styles//projects.css">
+    <link rel="stylesheet" href="styles//contact-me.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto+Slab:wght@400;500;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="change">
+        <section class="nameSection">Welkin Grullon</section>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+        <section class="linkSection">
+            <a href="#home" class="headerHome linked">Home</a>
+            <a href="#aboutMe" class="headerAboutMe linked">About Me</a>
+            <a href="#skills" class="headerSkills linked">Skills</a>
+            <a class="headerProjects linked">Projects</a>
+            <a class="headerContact linked">Contact Me</a>
+        </section>
+        <section class="socialSection linked">
+            <a><img class="githubIcon linked" src="icons/github.svg"></a>
+            <a><img class="linkedinIcon linked" src="icons/linkedin.svg"></a>
+            <a><img class="resumeIcon linked" src="icons/resume.svg"></a>
+        </section>
+    </header>
+    <main>
+        <section id="home" class="home ">   
+            <container class="videoContainer">
+                <video class="homeVideo" autoplay muted loop="true" src="video.mp4"></video>
+            </container>
+            <div class="homeItems hidden">
+                <img class="homeIcon" src="icons/codingicon.svg">
+                <div class="homeWords">
+                    <p class="homeName">Welkin Grullon</p>
+                    <p class="homeTitle">Web Developer</p>
+                </div>
+                
+            </div>
+        </section>
+        <div id="aboutMe" class="aboutMe">
+            <div class="aboutMeWords hidden">
+                <h1 class="aboutMeHeader">About Me</h1>
+                <p class="aboutMePara">Hello, there! I am Welkin Grullon, an aspiring Web Developer. I am 
+                    originally from Puerto Rico, and from a young age I have been passionate
+                    about technology. As the years went by, it evolved into a love for web
+                    development. I am certified in HTML, CSS, Python, and Javascript and have 
+                    extensive knowledge of Javascript and it's framework React, as well as SQL and 
+                    databases. I also have experience in tech from working with Google
+                    as an associate trainer and sales specialist in its partnering stores. 
+                </p>
+            </div>
+            <img class="aboutMeImg hidden" src="aboutMeImg.png">
+        </div>
+        <div id="skills" class="skills hidden">
+            <container class="logos hidden">
+                <img class="logo hidden" src="logos/html.png">
+                <img class="logo hidden" src="logos/css.png">
+                <img class="logo hidden" src="logos/styled-components.png">
+                <img class="logo hidden" src="logos/javascript-1.svg">
+                <img class="logo hidden" src="logos/React.png">
+                <img class="logo hidden" src="logos/node-js.webp">
+                <img class="logo hidden" src="logos/bootstrap.png">
+                <img class="logo hidden" src="logos/python.png">
+                <img class="logo hidden" src="logos/sql.png">
+            </container>
+            <container class="skillWords">
+                <h1 class="skillHeader">
+                    Skills
+                </h1>
+                <p class="skillPara">
+                    Throughout my web development journey, I have learned quite a bit. 
+                    I began with the fundamentals of HTML, CSS, and it's frameworks. 
+                    I also learned the ins and outs of Javascript, in order to maximize
+                    the potential and fluidity of any site I create. I also became familiar 
+                    with it's frameworks, primarily React. I also got certified in Python,
+                    to have a foundation with back-end portions of web development, in order to
+                    truly be balanced as a developer
+                </p>
+            </container>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

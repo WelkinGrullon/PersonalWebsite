@@ -1,0 +1,43 @@
+.home{
+    position:relative;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+.videoContaienr{
+    min-height: 100%;
+    overflow: hidden;
+}
+.homeVideo{
+    width:100vw;
+    height:100vh;
+    position:relative;
+    object-fit: cover;
+    overflow: hidden;
+}
+.homeItems{
+    position:absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center;
+
+}
+.homeIcon{
+    width:300px;
+}
+.homeWords{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 2px;
+}
+.homeName{
+    margin: top -5px;
+    font-size: 40px;
+    font-weight: 700;
+}
+.homeTitle{
+    margin-top: -10px;;
+}
