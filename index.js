@@ -1,4 +1,15 @@
 let header = document.getElementById("change");
+const projectsContainer = document.querySelector(".projectsContain");
+const modal = document.querySelectorAll(".modal");
+const btn = document.querySelectorAll(".projectBtn");
+const span = document.querySelectorAll(".close");
+const hiddenElements = document.querySelectorAll(".hidden");
+const toggleButton = document.getElementsByClassName("toggle-button")[0];
+const linkSection = document.querySelector(".linkSection");
+const socialSection = document.querySelector(".socialSection");
+const li = document.querySelectorAll(".links");
+const sec = document.querySelectorAll("section");
+activeMenu();
 window.onscroll = function () {
   const scroller = window.scrollY;
   let header = document.getElementById("change");
@@ -17,20 +28,11 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 });
-const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
-
-const toggleButton = document.getElementsByClassName("toggle-button")[0];
-const linkSection = document.querySelector(".linkSection");
-const socialSection = document.querySelector(".socialSection");
 toggleButton.addEventListener("click", function () {
   //document.body.classList.toggle("stop-scrolling");
   linkSection.classList.toggle("active2");
 });
-
-const li = document.querySelectorAll(".links");
-const sec = document.querySelectorAll("section");
-
 function activeMenu() {
   let len = sec.length;
   while (--len && window.scrollY + 75 < sec[len].offsetTop) {}
@@ -38,16 +40,10 @@ function activeMenu() {
   li[len].classList.add("active");
   document.querySelector(".active").style.color = "purple";
 }
-activeMenu();
 window.addEventListener("scroll", activeMenu);
 linkSection.addEventListener("click", function () {
   linkSection.classList.remove("active2");
 });
-const projectsContainer = document.querySelector(".projectsContain");
-const modal = document.querySelectorAll(".modal");
-const btn = document.querySelectorAll(".projectBtn");
-const span = document.querySelectorAll(".close");
-
 projectsContainer.addEventListener("click", function (e) {
   const clicked = e.target.closest(".projectBtn");
   const activeModal = document.querySelector(`.modal-${clicked.dataset.modal}`);
