@@ -1,0 +1,123 @@
+header {
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  align-items: center;
+  height: 75px;
+  width: 100vw;
+  z-index: 100;
+  font-size: clamp(11px, 1.2vw, 1.2vw);
+}
+.nameSection {
+  flex: 20%;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  color: white;
+  background-color: transparent;
+}
+@media screen and (max-width: 1080px) {
+  .nameName {
+    font-size: 17px;
+  }
+  #linkSection {
+    font-size: 10px;
+  }
+}
+.linkSection {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 80%;
+  color: white;
+  list-style: none;
+}
+.active {
+  color: purple;
+  font-size: 21px;
+  border-bottom: solid purple 2px;
+}
+
+.linkSection a {
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
+}
+.linkSection img {
+  width: 25px;
+  height: 25px;
+  color: white;
+}
+.linkSection a:hover {
+  color: purple;
+}
+.toggle-button {
+  display: absolute;
+  color: white;
+  top: 10px;
+  right: 10px;
+}
+.navBarIcon {
+  display: absolute;
+  height: 20px;
+  position: absolute;
+  top: 30%;
+  right: 10%;
+}
+.active2 {
+  position: absolute;
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  top: 50px;
+  font-size: x-large;
+  margin-left: 0;
+  padding-left: 0;
+  padding-bottom: 100px;
+  z-index: 99;
+  background-color: RGB(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 900px) {
+  .toggle-button {
+    display: absolute;
+    color: white;
+    top: 10px;
+    right: 10px;
+  }
+  .navBarIcon {
+    display: absolute;
+    height: 20px;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+  }
+  .linkSection {
+    display: none;
+  }
+  .active2 {
+    position: absolute;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    top: 50px;
+    font-size: x-large;
+    margin-left: 0;
+    padding-left: 0;
+    padding-bottom: 100px;
+    z-index: 99;
+    background-color: RGB(0, 0, 0, 0.5);
+  }
+}
+@media screen and (min-width: 901px) {
+  .toggle-button {
+    display: none;
+  }
+}

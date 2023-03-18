@@ -1,0 +1,83 @@
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 101; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 1); /* Black w/ opacity */
+}
+.activeModal {
+  display: flex;
+}
+.modal-content {
+  background-color: white;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  color: black;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+#projectsId {
+  height: 100vh;
+}
+
+#projectsId {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.projectsContain {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.projectBtn {
+  border: none;
+  color: white;
+  background-color: #333;
+  margin-left: 0;
+  margin-right: 0px;
+  border-radius: 10px;
+  width: 99%;
+  cursor: pointer;
+}
+.projectFrame {
+  width: 100%;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: transparent;
+  overflow: hidden;
+}
+.projectBtn p {
+  background-color: black;
+  display: inline-block;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px;
+}
+@media screen and (max-width: 600px) {
+  .projectsContain {
+    flex-direction: row;
+  }
+}
