@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles//contact-me.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto+Slab:wght@400;500;800&display=swap"
       rel="stylesheet"
@@ -38,13 +39,13 @@
           <a href="#contactMeId">Contact</a>
         </li>
         <li class="link">
-          <a href="#home"><img src="icons/icons8-github (1).svg" /></a>
+          <a href="https://github.com/WelkinGrullon" target="_blank"><img src="icons/icons8-github (1).svg" /></a>
         </li>
         <li class="link">
-          <a href="#home"><img src="icons/icons8-linkedin-circled.svg" /></a>
+          <a href="https://www.linkedin.com/in/welkin-grullon-guivas-2bb726217" target="_blank"><img src="icons/icons8-linkedin-circled.svg" /></a>
         </li>
         <li class="link">
-          <a href="#home"><img src="icons/icons8-document-48.png" /></a>
+          <a href="https://moccasin-lee-57.tiiny.site/" target="_blank" ><img src="icons/icons8-document-48.png" /></a>
         </li>
       </ul>
     </header>
@@ -87,70 +88,78 @@
         <container class="logos hidden">
           <img class="logo hidden" src="logos/html.png" />
           <img class="logo hidden" src="logos/css.png" />
-          <img class="logo hidden" src="logos/styled-components.png" />
           <img class="logo hidden" src="logos/javascript-1.svg" />
+          <img class="logo hidden" src="logos/bootstrap.png" />
           <img class="logo hidden" src="logos/React.png" />
           <img class="logo hidden" src="logos/node-js.webp" />
-          <img class="logo hidden" src="logos/bootstrap.png" />
-          <img class="logo hidden" src="logos/python.png" />
-          <img class="logo hidden" src="logos/sql.png" />
+          <img class="logo hidden" src="logos/git.png" />
+          <img class="logo hidden" src="logos/mongoose-removebg-preview.png" />
+          <img class="logo hidden" src="logos/mongodb-removebg-preview (1).png" />
         </container>
         <container class="skillWords">
           <h1 class="skillHeader">Skills</h1>
           <p class="skillPara">
-            Throughout my web development journey, I have learned quite a bit. I
-            began with the fundamentals of HTML, CSS, and it's frameworks. I
-            also learned the ins and outs of Javascript, in order to maximize
-            the potential and fluidity of any site I create. I also became
-            familiar with it's frameworks, primarily React. I also got certified
-            in Python, to have a foundation with back-end portions of web
-            development, in order to truly be balanced as a developer
+            Throughout mmy journey through web development, I have acquired many skills.  Beginning with HTML, CSS, and Javascript. I then furthered my skiills by learning React.js to become more rounded in the front end. I then learned Node.js, express, mongoDB, and mongoose to create a strong foundation with the backend side of web development. I rounded it out with learning about deployment, with Heroku, Git, and Github to learn how to work in a team environment on projects effeciently
           </p>
         </container>
       </section>
       <section id="projectsId" class="hidden projects">
         <h1 class="projectsHeader">My Projects</h1>
         <container class="projectsContain">
-          <div class="projectOne">
-            <button class="projectBtn" id="myBtn" data-modal="1">
-              <iframe class="projectFrame"></iframe>
-              <p>Button1</p>
-            </button>
-            <p></p>
-            <div id="myModal" class="modal modal-1">
-              <div class="modal-content">
-                <span class="close close-1">&times;</span>
-                <p>some text</p>
-              </div>
+          <div class="projectItem hidden">
+            <div class="projectImg">
+              <img src="./icons/calendario.png" />
             </div>
-          </div>
-          <div>
-            <button class="projectBtn" id="myBtn2" data-modal="2">
-              <iframe class="projectFrame"></iframe>
-              <p>Button2</p>
-            </button>
-            <p></p>
-            <div id="myModal2" class="modal modal-2">
-              <div class="modal-content">
-                <span class="close close-2">&times;</span>
-                <p>this is modal 2</p>
+            <div class="projectDesc">
+              <h3>Calendario</h3>
+              <p> A group calendar with a proper registration and login system with password hashing. People can create groups with their peers and add their schedules to remove the hassle of aligning your schedules and finding a perfect date to spend time together.</p>
+              <ul class="projectList">
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+                <li>Bootstrap</li>
+              </ul>
+              <div class="projectLogo">
+                <a href="https://calendar-io.netlify.app" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                  <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                </svg></a>
+                <a href="https://github.com/WelkinGrullon/calendario" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                  </svg>
+                </a>
+                
               </div>
-            </div>
+            </div>     
           </div>
-          <div>
-            <button class="projectBtn" id="myBtn3" data-modal="3">
-              <iframe src="" class="projectFrame"></iframe>
-              <p>Button3</p>
-            </button>
-            <p></p>
-            <div id="myModal3" class="modal modal-3">
-              <div class="modal-content">
-                <span class="close close-3">&times;</span>
-                <p>this is modal 3</p>
+          <div class="projectItem hidden">
+            <div class="projectImg">
+              <img src="./icons/movieSite.png" />
+            </div>
+            <div class="projectDesc">
+              <h3>Cinematica</h3>
+              <p>A static movie site made using vanilla Javascript, HTML, and CSS. Used to display the usage of APIs and connecting to  external databasases. has a working search bar, categories, and genres of movies, with descriptions, ratings, and links to further information on each film.</p>
+              <ul class="projectList">
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Restful API</li>
+              </ul>
+              <div class="projectLogo">
+                <a href="https://welkingrullon.github.io/MovieWebsite/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                  <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                </svg></a>
+                <a href="https://github.com/WelkinGrullon/MovieWebsite" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                  </svg>
+                </a>
+                
               </div>
-            </div>
-          </div>
-        </container>
+            </div>     
+          </div>        </container>
       </section>
       <section id="contactMeId" class="hidden contactMe">
         <h1>Contact Me</h1>

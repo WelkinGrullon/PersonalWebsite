@@ -15,6 +15,7 @@
 .logos {
   width: 50%;
   display: grid;
+  align-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   flex: 50%;
 }
